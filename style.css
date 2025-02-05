@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-imagem {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card-principal {
+    padding: 30px;
+}
+
+.card-nome {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-local {
+    color: hsl(75, 94%, 57%);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.card-infomacao {
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card-button button {
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition:  hsl(75, 94%, 57%) 0.3s ease;
+}
+
+.card-button button:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
+
+.attribution {
+    font-size: 14px;
+    color: hsl(0, 0%, 33%);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .attribution a {
+    color: hsl(0, 0%, 100%); 
+    text-decoration: none;
+  }
+  
+  .attribution a:hover {
+    text-decoration: underline; 
+  }
+  
+  .attribution a:focus {
+    outline: none; 
+  }
+
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+    .card-principal {
+        padding: 20px;
+    }
+    .card-nome, .card-local, .card-infomacao {
+        font-size: 14px;
+    }
+    .card-button button {
+        height: 45px;
+        font-size: 14px;
+    }
+}
